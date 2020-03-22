@@ -1,0 +1,70 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.WinXCalendars, Vcl.StdCtrls,
+  Vcl.ExtCtrls, Vcl.WinXPanels, Vcl.WinXPickers, Data.DB, Data.Win.ADODB,
+  Vcl.Buttons, Vcl.Grids, Vcl.DBGrids;
+
+type
+  TForm1 = class(TForm)
+    kullaniciadi: TLabeledEdit;
+    ADOConnection1: TADOConnection;
+    ADOQuery1: TADOQuery;
+    Þifre: TLabeledEdit;
+    Button1: TButton;
+    Label1: TLabel;
+    procedure Button1Click(Sender: TObject);
+    procedure ÞifreKeyPress(Sender: TObject; var Key: Char);
+    procedure kullaniciadiKeyPress(Sender: TObject; var Key: Char);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit2;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+
+  ADOQuery1.SQL.Clear;
+  ADOQuery1.SQL.Add('select * from kullanici_hesabi where kullanici_adi='''+kullaniciadi.Text+''' and sifre='''+Þifre.Text+'''');
+  ADOQuery1.Open;
+
+if not ADOQuery1.Eof then
+begin
+  form2.Show;
+  ModalResult := mrOk;
+end
+else
+begin
+  ShowMessage('kullanýcý adý veya þifre yanlýþ');
+  ModalResult :=mrNone;
+end;
+end;
+
+procedure TForm1.kullaniciadiKeyPress(Sender: TObject; var Key: Char);
+begin
+  if Key=#13 then  begin
+    Button1.Click;
+  end;
+end;
+
+procedure TForm1.ÞifreKeyPress(Sender: TObject; var Key: Char);
+begin
+  if Key=#13 then  begin
+    Button1.Click;
+  end;
+end;
+
+end.

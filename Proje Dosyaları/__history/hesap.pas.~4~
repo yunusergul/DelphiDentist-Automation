@@ -1,0 +1,33 @@
+unit hesap;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Menus, Data.Win.ADODB,
+  Vcl.StdCtrls, Vcl.WinXCtrls, Vcl.Grids, Vcl.DBGrids, Vcl.ExtCtrls, Vcl.Buttons;
+
+type
+  TForm10 = class(TForm)
+    GridPanel1: TGridPanel;
+    DBGrid1: TDBGrid;
+    SearchBox1: TSearchBox;
+    ADOQuery1: TADOQuery;
+    ADOConnection1: TADOConnection;
+    DataSource1: TDataSource;
+    odemeyap: TPopupMenu;
+    Dzenle1: TMenuItem;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form10: TForm10;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,45 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  BiDiMode = bdLeftToRight
+  Caption = 'Form2'
+  ClientHeight = 384
+  ClientWidth = 612
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  ParentBiDiMode = False
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Button1: TButton
+    Left = 537
+    Top = 0
+    Width = 75
+    Height = 384
+    Align = alRight
+    Caption = 'Button1'
+    TabOrder = 0
+    ExplicitLeft = 80
+    ExplicitTop = 144
+    ExplicitHeight = 25
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 185
+    Height = 384
+    Align = alLeft
+    Alignment = taLeftJustify
+    Caption = 'Panel1'
+    TabOrder = 1
+    ExplicitLeft = 152
+    ExplicitTop = 48
+    ExplicitHeight = 41
+  end
+end

@@ -1,0 +1,42 @@
+unit randevu;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.FileCtrl,
+  Vcl.CheckLst, Vcl.ComCtrls, Vcl.TabNotBk, VCLTee.TeeFilters, System.ImageList,
+  Vcl.ImgList, IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl,
+  IWCompExtCtrls, Vcl.Imaging.pngimage;
+
+type
+  TForm5 = class(TForm)
+    Shape1: TShape;
+    Image1: TImage;
+    ImageFiltered1: TImageFiltered;
+    procedure Button1Click(Sender: TObject);
+    procedure ImageFiltered1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm5.Button1Click(Sender: TObject);
+begin
+ImageFiltered1.Filters.Changed:=True
+end;
+
+procedure TForm5.ImageFiltered1Click(Sender: TObject);
+begin
+ImageFiltered1.Filters.Capacity:=2;
+end;
+
+end.

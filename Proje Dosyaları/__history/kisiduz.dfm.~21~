@@ -1,0 +1,646 @@
+object Form8: TForm8
+  Left = 0
+  Top = 0
+  BorderStyle = bsSizeToolWin
+  Caption = 'Form8'
+  ClientHeight = 392
+  ClientWidth = 666
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object GridPanel1: TGridPanel
+    Left = 32
+    Top = 10
+    Width = 297
+    Height = 560
+    BevelOuter = bvNone
+    ColumnCollection = <
+      item
+        Value = 45.000000000000000000
+      end
+      item
+        Value = 10.000000000000000000
+      end
+      item
+        Value = 45.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = StaticText1
+        Row = 2
+      end
+      item
+        Column = 2
+        Control = MaskEdit1
+        Row = 2
+      end
+      item
+        Column = 0
+        Control = StaticText2
+        Row = 4
+      end
+      item
+        Column = 2
+        Control = MaskEdit2
+        Row = 4
+      end
+      item
+        Column = 0
+        Control = StaticText3
+        Row = 6
+      end
+      item
+        Column = 2
+        Control = MaskEdit3
+        Row = 6
+      end
+      item
+        Column = 0
+        Control = StaticText4
+        Row = 8
+      end
+      item
+        Column = 2
+        Control = Memo1
+        Row = 8
+      end
+      item
+        Column = 0
+        Control = StaticText5
+        Row = 10
+      end
+      item
+        Column = 2
+        Control = MaskEdit4
+        Row = 10
+      end
+      item
+        Column = 0
+        Control = StaticText6
+        Row = 12
+      end
+      item
+        Column = 2
+        Control = MaskEdit5
+        Row = 12
+      end
+      item
+        Column = 0
+        ColumnSpan = 3
+        Control = StaticText7
+        Row = 0
+      end
+      item
+        Column = 0
+        ColumnSpan = 3
+        Control = Panel1
+        Row = 14
+      end>
+    RowCollection = <
+      item
+        Value = 5.000000000000000000
+      end
+      item
+        Value = 2.000000000000000000
+      end
+      item
+        Value = 4.000000000000000000
+      end
+      item
+        Value = 1.000000000000000000
+      end
+      item
+        Value = 4.000000000000000000
+      end
+      item
+        Value = 1.000000000000000000
+      end
+      item
+        Value = 4.000000000000000000
+      end
+      item
+        Value = 1.000000000000000000
+      end
+      item
+        Value = 20.000000000000000000
+      end
+      item
+        Value = 1.000000000000000000
+      end
+      item
+        Value = 4.000000000000000000
+      end
+      item
+        Value = 1.000000000000000000
+      end
+      item
+        Value = 4.000000000000000000
+      end
+      item
+        Value = 1.000000000000000000
+      end
+      item
+        Value = 47.000000000000000000
+      end>
+    TabOrder = 0
+    DesignSize = (
+      297
+      560)
+    object StaticText1: TStaticText
+      Left = 0
+      Top = 39
+      Width = 133
+      Height = 17
+      Align = alTop
+      Caption = 'Ad'#305':'
+      TabOrder = 0
+      ExplicitLeft = 1
+      ExplicitWidth = 132
+    end
+    object MaskEdit1: TMaskEdit
+      Left = 162
+      Top = 39
+      Width = 135
+      Height = 22
+      Align = alClient
+      TabOrder = 1
+      Text = ''
+      ExplicitWidth = 134
+      ExplicitHeight = 21
+    end
+    object StaticText2: TStaticText
+      Left = 0
+      Top = 66
+      Width = 133
+      Height = 17
+      Align = alTop
+      Caption = 'Soyad'#305':'
+      TabOrder = 2
+      ExplicitLeft = 1
+      ExplicitWidth = 132
+    end
+    object MaskEdit2: TMaskEdit
+      Left = 162
+      Top = 66
+      Width = 135
+      Height = 22
+      Align = alClient
+      TabOrder = 3
+      Text = ''
+      ExplicitWidth = 134
+      ExplicitHeight = 21
+    end
+    object StaticText3: TStaticText
+      Left = 0
+      Top = 93
+      Width = 133
+      Height = 17
+      Align = alTop
+      Caption = 'Kimlik No:'
+      TabOrder = 4
+      ExplicitLeft = 1
+      ExplicitWidth = 132
+    end
+    object MaskEdit3: TMaskEdit
+      Left = 162
+      Top = 93
+      Width = 135
+      Height = 22
+      Align = alClient
+      TabOrder = 5
+      Text = ''
+      ExplicitWidth = 134
+      ExplicitHeight = 21
+    end
+    object StaticText4: TStaticText
+      Left = 0
+      Top = 120
+      Width = 133
+      Height = 17
+      Align = alTop
+      Caption = 'Adres:'
+      TabOrder = 6
+      ExplicitLeft = 1
+      ExplicitWidth = 132
+    end
+    object Memo1: TMemo
+      Left = 162
+      Top = 120
+      Width = 135
+      Height = 112
+      Align = alClient
+      TabOrder = 7
+      ExplicitWidth = 134
+      ExplicitHeight = 111
+    end
+    object StaticText5: TStaticText
+      Left = 0
+      Top = 237
+      Width = 133
+      Height = 17
+      Align = alTop
+      Caption = 'Telefon Numaras'#305':'
+      TabOrder = 8
+      ExplicitLeft = 1
+      ExplicitTop = 236
+      ExplicitWidth = 132
+    end
+    object MaskEdit4: TMaskEdit
+      Left = 162
+      Top = 237
+      Width = 135
+      Height = 22
+      Align = alClient
+      TabOrder = 9
+      Text = ''
+      ExplicitLeft = 161
+      ExplicitTop = 234
+      ExplicitWidth = 134
+    end
+    object StaticText6: TStaticText
+      Left = 0
+      Top = 264
+      Width = 133
+      Height = 17
+      Align = alTop
+      Caption = 'Email Adresi'
+      TabOrder = 10
+      ExplicitLeft = 1
+      ExplicitTop = 263
+      ExplicitWidth = 132
+    end
+    object MaskEdit5: TMaskEdit
+      Left = 162
+      Top = 264
+      Width = 135
+      Height = 22
+      Align = alClient
+      TabOrder = 11
+      Text = ''
+      ExplicitLeft = 161
+      ExplicitTop = 261
+      ExplicitWidth = 134
+    end
+    object StaticText7: TStaticText
+      Left = 108
+      Top = 4
+      Width = 81
+      Height = 20
+      Anchors = []
+      Caption = 'Hasta Bilgileri'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 12
+      ExplicitLeft = 115
+      ExplicitTop = 6
+    end
+    object Panel1: TPanel
+      Left = 0
+      Top = 291
+      Width = 297
+      Height = 269
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 13
+      ExplicitLeft = 26
+      ExplicitTop = 324
+      ExplicitWidth = 185
+      ExplicitHeight = 41
+      DesignSize = (
+        297
+        269)
+      object RadioButton1: TRadioButton
+        Left = 40
+        Top = 16
+        Width = 49
+        Height = 17
+        Caption = 'Erkek'
+        TabOrder = 0
+      end
+      object RadioButton2: TRadioButton
+        Left = 40
+        Top = 39
+        Width = 49
+        Height = 17
+        Caption = 'Kad'#305'n'
+        TabOrder = 1
+      end
+      object StaticText9: TStaticText
+        Left = 29
+        Top = 1
+        Width = 42
+        Height = 17
+        Anchors = []
+        Caption = 'Cinsiyet'
+        TabOrder = 2
+      end
+    end
+  end
+  object GridPanel2: TGridPanel
+    Left = 344
+    Top = 10
+    Width = 297
+    Height = 560
+    BevelOuter = bvNone
+    ColumnCollection = <
+      item
+        Value = 45.000000000000000000
+      end
+      item
+        Value = 10.000000000000000000
+      end
+      item
+        Value = 45.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = StaticText12
+        Row = 2
+      end
+      item
+        Column = 2
+        Control = MaskEdit11
+        Row = 2
+      end
+      item
+        Column = 0
+        Control = StaticText13
+        Row = 4
+      end
+      item
+        Column = 2
+        Control = MaskEdit12
+        Row = 4
+      end
+      item
+        Column = 0
+        Control = StaticText14
+        Row = 6
+      end
+      item
+        Column = 2
+        Control = MaskEdit13
+        Row = 6
+      end
+      item
+        Column = 0
+        Control = StaticText16
+        Row = 8
+      end
+      item
+        Column = 2
+        Control = MaskEdit14
+        Row = 8
+      end
+      item
+        Column = 0
+        Control = StaticText17
+        Row = 10
+      end
+      item
+        Column = 2
+        Control = MaskEdit15
+        Row = 10
+      end
+      item
+        Column = 0
+        ColumnSpan = 3
+        Control = StaticText8
+        Row = 0
+      end
+      item
+        Column = 0
+        ColumnSpan = 3
+        Control = Panel2
+        Row = 12
+      end>
+    RowCollection = <
+      item
+        Value = 5.000000000000000000
+      end
+      item
+        Value = 2.000000000000000000
+      end
+      item
+        Value = 4.000000000000000000
+      end
+      item
+        Value = 1.000000000000000000
+      end
+      item
+        Value = 4.000000000000000000
+      end
+      item
+        Value = 1.000000000000000000
+      end
+      item
+        Value = 4.000000000000000000
+      end
+      item
+        Value = 1.000000000000000000
+      end
+      item
+        Value = 4.000000000000000000
+      end
+      item
+        Value = 1.000000000000000000
+      end
+      item
+        Value = 4.000000000000000000
+      end
+      item
+        Value = 1.000000000000000000
+      end
+      item
+        Value = 68.000000000000000000
+      end>
+    TabOrder = 1
+    DesignSize = (
+      297
+      560)
+    object StaticText12: TStaticText
+      Left = 0
+      Top = 39
+      Width = 133
+      Height = 17
+      Align = alTop
+      Caption = 'Ad'#305':'
+      TabOrder = 0
+      ExplicitLeft = 1
+      ExplicitWidth = 132
+    end
+    object MaskEdit11: TMaskEdit
+      Left = 162
+      Top = 39
+      Width = 135
+      Height = 22
+      Align = alClient
+      TabOrder = 1
+      Text = ''
+      ExplicitWidth = 134
+      ExplicitHeight = 21
+    end
+    object StaticText13: TStaticText
+      Left = 0
+      Top = 66
+      Width = 133
+      Height = 17
+      Align = alTop
+      Caption = 'Soyad'#305':'
+      TabOrder = 2
+      ExplicitLeft = 1
+      ExplicitWidth = 132
+    end
+    object MaskEdit12: TMaskEdit
+      Left = 162
+      Top = 66
+      Width = 135
+      Height = 22
+      Align = alClient
+      TabOrder = 3
+      Text = ''
+      ExplicitWidth = 134
+      ExplicitHeight = 21
+    end
+    object StaticText14: TStaticText
+      Left = 0
+      Top = 93
+      Width = 133
+      Height = 17
+      Align = alTop
+      Caption = 'Yak'#305'nl'#305'k:'
+      TabOrder = 4
+      ExplicitLeft = 1
+      ExplicitWidth = 132
+    end
+    object MaskEdit13: TMaskEdit
+      Left = 162
+      Top = 93
+      Width = 135
+      Height = 22
+      Align = alClient
+      TabOrder = 5
+      Text = ''
+      ExplicitWidth = 134
+      ExplicitHeight = 21
+    end
+    object StaticText16: TStaticText
+      Left = 0
+      Top = 120
+      Width = 133
+      Height = 17
+      Align = alTop
+      Caption = 'Telefon Numaras'#305':'
+      TabOrder = 6
+      ExplicitLeft = 1
+      ExplicitWidth = 132
+    end
+    object MaskEdit14: TMaskEdit
+      Left = 162
+      Top = 120
+      Width = 135
+      Height = 22
+      Align = alClient
+      TabOrder = 7
+      Text = ''
+      ExplicitWidth = 134
+      ExplicitHeight = 21
+    end
+    object StaticText17: TStaticText
+      Left = 0
+      Top = 147
+      Width = 133
+      Height = 17
+      Align = alTop
+      Caption = 'Email Adresi'
+      TabOrder = 8
+      ExplicitLeft = 1
+      ExplicitWidth = 132
+    end
+    object MaskEdit15: TMaskEdit
+      Left = 162
+      Top = 147
+      Width = 135
+      Height = 22
+      Align = alClient
+      TabOrder = 9
+      Text = ''
+      ExplicitWidth = 134
+      ExplicitHeight = 21
+    end
+    object StaticText8: TStaticText
+      Left = 91
+      Top = 4
+      Width = 115
+      Height = 20
+      Anchors = []
+      Caption = 'Hasta Yak'#305'n Bilgileri'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 10
+      ExplicitLeft = 101
+      ExplicitTop = 6
+    end
+    object Panel2: TPanel
+      Left = 0
+      Top = 174
+      Width = 297
+      Height = 386
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 11
+      ExplicitLeft = 248
+      ExplicitTop = 248
+      ExplicitWidth = 185
+      ExplicitHeight = 41
+      object Button1: TButton
+        Left = 135
+        Top = 176
+        Width = 75
+        Height = 25
+        Caption = 'Kaydet'
+        TabOrder = 0
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Left = 216
+        Top = 176
+        Width = 75
+        Height = 25
+        Caption = #304'ptal Et'
+        TabOrder = 1
+      end
+    end
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
+      'fo=False;Initial Catalog=disci;Data Source=DESKTOP-PKHVEEA\SQLEX' +
+      'PRESS'
+    LoginPrompt = False
+    Provider = 'SQLOLEDB.1'
+  end
+  object ADOQuery1: TADOQuery
+    Connection = ADOConnection1
+    Parameters = <>
+    Top = 32
+  end
+end

@@ -1,0 +1,542 @@
+object Form9: TForm9
+  Left = 0
+  Top = 0
+  BorderStyle = bsSingle
+  Caption = 'Randevu Ekle/Sil'
+  ClientHeight = 284
+  ClientWidth = 367
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object BitBtn1: TBitBtn
+    Tag = 1
+    Left = 207
+    Top = 40
+    Width = 75
+    Height = 25
+    Caption = '09:00'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clLime
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    StyleElements = [seBorder]
+    OnClick = BitBtn1Click
+  end
+  object BitBtn2: TBitBtn
+    Tag = 2
+    Left = 207
+    Top = 71
+    Width = 75
+    Height = 25
+    Caption = '09:30'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clLime
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Style = bsNew
+    TabOrder = 1
+    StyleElements = [seBorder]
+    OnClick = BitBtn1Click
+  end
+  object BitBtn3: TBitBtn
+    Tag = 3
+    Left = 207
+    Top = 102
+    Width = 75
+    Height = 25
+    Caption = '10:00'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clLime
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    StyleElements = [seBorder]
+    OnClick = BitBtn1Click
+  end
+  object BitBtn4: TBitBtn
+    Tag = 4
+    Left = 207
+    Top = 133
+    Width = 75
+    Height = 25
+    Caption = '10:30'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clLime
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+    StyleElements = [seBorder]
+    OnClick = BitBtn1Click
+  end
+  object BitBtn5: TBitBtn
+    Tag = 5
+    Left = 207
+    Top = 164
+    Width = 75
+    Height = 25
+    Caption = '11:00'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clLime
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+    StyleElements = [seBorder]
+    OnClick = BitBtn1Click
+  end
+  object BitBtn6: TBitBtn
+    Tag = 6
+    Left = 207
+    Top = 195
+    Width = 75
+    Height = 25
+    Caption = '11:30'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clLime
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 5
+    StyleElements = [seBorder]
+    OnClick = BitBtn1Click
+  end
+  object BitBtn7: TBitBtn
+    Tag = 7
+    Left = 207
+    Top = 226
+    Width = 75
+    Height = 25
+    Caption = '12:00'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clLime
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 6
+    StyleElements = [seBorder]
+    OnClick = BitBtn1Click
+  end
+  object BitBtn8: TBitBtn
+    Tag = 8
+    Left = 207
+    Top = 257
+    Width = 75
+    Height = 25
+    Caption = '12:30'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clLime
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 7
+    StyleElements = [seBorder]
+    OnClick = BitBtn1Click
+  end
+  object BitBtn9: TBitBtn
+    Tag = 9
+    Left = 288
+    Top = 40
+    Width = 75
+    Height = 25
+    Caption = '13:00'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clLime
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 8
+    StyleElements = [seBorder]
+    OnClick = BitBtn1Click
+  end
+  object BitBtn10: TBitBtn
+    Tag = 10
+    Left = 288
+    Top = 71
+    Width = 75
+    Height = 25
+    Caption = '13:30'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clLime
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 9
+    StyleElements = [seBorder]
+    OnClick = BitBtn1Click
+  end
+  object BitBtn11: TBitBtn
+    Tag = 11
+    Left = 288
+    Top = 102
+    Width = 75
+    Height = 25
+    Caption = '14:00'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clLime
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 10
+    StyleElements = [seBorder]
+    OnClick = BitBtn1Click
+  end
+  object BitBtn12: TBitBtn
+    Tag = 12
+    Left = 288
+    Top = 133
+    Width = 75
+    Height = 25
+    Caption = '14:30'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clLime
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 11
+    StyleElements = [seBorder]
+    OnClick = BitBtn1Click
+  end
+  object BitBtn13: TBitBtn
+    Tag = 13
+    Left = 288
+    Top = 164
+    Width = 75
+    Height = 25
+    Caption = '15:00'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clLime
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 12
+    StyleElements = [seBorder]
+    OnClick = BitBtn1Click
+  end
+  object BitBtn14: TBitBtn
+    Tag = 14
+    Left = 288
+    Top = 195
+    Width = 75
+    Height = 25
+    Caption = '15:30'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clLime
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 13
+    StyleElements = [seBorder]
+    OnClick = BitBtn1Click
+  end
+  object BitBtn15: TBitBtn
+    Tag = 15
+    Left = 288
+    Top = 226
+    Width = 75
+    Height = 25
+    Caption = '16:00'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clLime
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 14
+    StyleElements = [seBorder]
+    OnClick = BitBtn1Click
+  end
+  object BitBtn16: TBitBtn
+    Tag = 16
+    Left = 288
+    Top = 257
+    Width = 75
+    Height = 25
+    Caption = '16:30'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clLime
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 15
+    StyleElements = [seBorder]
+    OnClick = BitBtn1Click
+  end
+  object CalendarView1: TCalendarView
+    Left = 8
+    Top = 35
+    Width = 193
+    Height = 242
+    Date = 43198.000000000000000000
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    HeaderInfo.DaysOfWeekFont.Charset = DEFAULT_CHARSET
+    HeaderInfo.DaysOfWeekFont.Color = clWindowText
+    HeaderInfo.DaysOfWeekFont.Height = -13
+    HeaderInfo.DaysOfWeekFont.Name = 'Segoe UI'
+    HeaderInfo.DaysOfWeekFont.Style = []
+    HeaderInfo.Font.Charset = DEFAULT_CHARSET
+    HeaderInfo.Font.Color = clWindowText
+    HeaderInfo.Font.Height = -20
+    HeaderInfo.Font.Name = 'Segoe UI'
+    HeaderInfo.Font.Style = []
+    OnChange = CalendarView1Change
+    ParentFont = False
+    TabOrder = 16
+  end
+  object ComboBox1: TComboBox
+    Left = 8
+    Top = 8
+    Width = 193
+    Height = 21
+    TabOrder = 17
+    OnChange = ComboBox1Change
+  end
+  object Panel1: TPanel
+    Left = 369
+    Top = 8
+    Width = 232
+    Height = 274
+    BevelOuter = bvNone
+    TabOrder = 18
+    object SearchBox1: TSearchBox
+      Left = 0
+      Top = 0
+      Width = 232
+      Height = 21
+      Align = alTop
+      TabOrder = 0
+      OnChange = SearchBox1Change
+    end
+    object DBGrid1: TDBGrid
+      Left = 0
+      Top = 21
+      Width = 232
+      Height = 228
+      Align = alTop
+      DataSource = DataSource1
+      Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+      ReadOnly = True
+      TabOrder = 1
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+      OnCellClick = DBGrid1CellClick
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'adi'
+          Width = 50
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'soyadi'
+          Width = 50
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'kimlik_no'
+          Width = 90
+          Visible = True
+        end>
+    end
+    object Button1: TButton
+      Left = 0
+      Top = 249
+      Width = 113
+      Height = 25
+      Align = alLeft
+      Caption = 'Randevu Ver'
+      TabOrder = 2
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Left = 112
+      Top = 249
+      Width = 120
+      Height = 25
+      Align = alRight
+      Caption = #304'ptal'
+      TabOrder = 3
+      OnClick = Button2Click
+    end
+  end
+  object StaticText1: TStaticText
+    Left = 207
+    Top = 2
+    Width = 144
+    Height = 32
+    Caption = 'Randevu Saati'
+    Color = clGray
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMenu
+    Font.Height = -20
+    Font.Name = 'Segoe UI Black'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 19
+    StyleElements = [seClient, seBorder]
+  end
+  object Panel2: TPanel
+    Left = 369
+    Top = 8
+    Width = 232
+    Height = 137
+    BevelOuter = bvNone
+    TabOrder = 20
+    object StaticText2: TStaticText
+      Left = 16
+      Top = 9
+      Width = 23
+      Height = 17
+      Caption = 'Ad'#305':'
+      TabOrder = 0
+    end
+    object StaticText3: TStaticText
+      Left = 16
+      Top = 32
+      Width = 40
+      Height = 17
+      Caption = 'Soyad'#305':'
+      TabOrder = 1
+    end
+    object StaticText4: TStaticText
+      Left = 16
+      Top = 55
+      Width = 80
+      Height = 17
+      Caption = 'Kimlik Numaras'#305':'
+      TabOrder = 2
+    end
+    object Button3: TButton
+      Left = 24
+      Top = 94
+      Width = 75
+      Height = 25
+      Caption = 'Randevu '#304'ptal'
+      TabOrder = 3
+      OnClick = Button3Click
+    end
+    object Button4: TButton
+      Left = 112
+      Top = 249
+      Width = 120
+      Height = 25
+      Caption = #304'ptal'
+      TabOrder = 4
+    end
+    object Button5: TButton
+      Left = 136
+      Top = 94
+      Width = 75
+      Height = 25
+      Caption = #304'ptal Et'
+      TabOrder = 5
+      OnClick = Button5Click
+    end
+    object StaticText5: TStaticText
+      Left = 45
+      Top = 9
+      Width = 59
+      Height = 17
+      Caption = 'StaticText5'
+      TabOrder = 6
+    end
+    object StaticText6: TStaticText
+      Left = 62
+      Top = 32
+      Width = 59
+      Height = 17
+      Caption = 'StaticText6'
+      TabOrder = 7
+    end
+    object StaticText7: TStaticText
+      Left = 102
+      Top = 55
+      Width = 59
+      Height = 17
+      Caption = 'StaticText7'
+      TabOrder = 8
+    end
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
+      'fo=False;Initial Catalog=disci;Data Source=DESKTOP-PKHVEEA\SQLEX' +
+      'PRESS'
+    LoginPrompt = False
+    Provider = 'SQLOLEDB.1'
+    Left = 200
+  end
+  object ADOQuery1: TADOQuery
+    Connection = ADOConnection1
+    Parameters = <>
+    Left = 248
+  end
+  object ADOQuery2: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      
+        'select * from kullanici_hesabi h join kullanini_rolu r on r.kull' +
+        'anici_hesabi_id=h.id where h.yetki_id=2')
+    Left = 224
+  end
+  object aramaQuery: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      
+        'select hb.adi,hb.soyadi,hb.kimlik_no,hb.id from hasta_bilgileri ' +
+        'hb join akraba ak on ak.id=hb.akraba_id')
+    Left = 296
+  end
+  object DataSource1: TDataSource
+    DataSet = aramaQuery
+    Left = 272
+  end
+  object ADOQuery3: TADOQuery
+    Connection = ADOConnection1
+    Parameters = <>
+    Left = 320
+  end
+end

@@ -1,0 +1,111 @@
+object Form11: TForm11
+  Left = 0
+  Top = 0
+  Caption = #214'deme Ekran'#305
+  ClientHeight = 473
+  ClientWidth = 385
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBGrid1: TDBGrid
+    Left = 16
+    Top = 112
+    Width = 345
+    Height = 337
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object StaticText1: TStaticText
+    Left = 16
+    Top = 8
+    Width = 23
+    Height = 17
+    Caption = 'Ad'#305':'
+    TabOrder = 1
+  end
+  object StaticText2: TStaticText
+    Left = 16
+    Top = 31
+    Width = 40
+    Height = 17
+    Caption = 'Soyad'#305':'
+    TabOrder = 2
+  end
+  object StaticText3: TStaticText
+    Left = 16
+    Top = 54
+    Width = 76
+    Height = 17
+    Caption = 'Kimlik Numaras'#305
+    TabOrder = 3
+  end
+  object StaticText4: TStaticText
+    Left = 16
+    Top = 77
+    Width = 58
+    Height = 17
+    Caption = 'Kalan Bor'#231':'
+    TabOrder = 4
+  end
+  object StaticText5: TStaticText
+    Left = 80
+    Top = 77
+    Width = 59
+    Height = 17
+    Caption = 'StaticText4'
+    TabOrder = 5
+  end
+  object StaticText6: TStaticText
+    Left = 98
+    Top = 54
+    Width = 59
+    Height = 17
+    Caption = 'StaticText3'
+    TabOrder = 6
+  end
+  object StaticText7: TStaticText
+    Left = 62
+    Top = 31
+    Width = 59
+    Height = 17
+    Caption = 'StaticText2'
+    TabOrder = 7
+  end
+  object StaticText8: TStaticText
+    Left = 45
+    Top = 8
+    Width = 59
+    Height = 17
+    Caption = 'StaticText1'
+    TabOrder = 8
+  end
+  object BitBtn1: TBitBtn
+    Left = 211
+    Top = 77
+    Width = 150
+    Height = 29
+    Caption = #214'deme Yap'
+    TabOrder = 9
+  end
+  object LabeledEdit1: TLabeledEdit
+    Left = 211
+    Top = 50
+    Width = 150
+    Height = 21
+    EditLabel.Width = 68
+    EditLabel.Height = 13
+    EditLabel.Caption = #214'deme Miktar'#305
+    TabOrder = 10
+  end
+end

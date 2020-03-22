@@ -1,0 +1,216 @@
+object Form5: TForm5
+  Left = 439
+  Top = 247
+  Caption = 'Randevu Defteri'
+  ClientHeight = 559
+  ClientWidth = 1002
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesigned
+  PixelsPerInch = 96
+  TextHeight = 13
+  object GridPanel1: TGridPanel
+    Left = 0
+    Top = 0
+    Width = 1002
+    Height = 559
+    Align = alClient
+    BevelOuter = bvNone
+    ColumnCollection = <
+      item
+        Value = 1.000000000000000000
+      end
+      item
+        Value = 4.000000000000000000
+      end
+      item
+        Value = 5.000000000000000000
+      end
+      item
+        Value = 20.000000000000000000
+      end
+      item
+        Value = 20.000000000000000000
+      end
+      item
+        Value = 20.000000000000000000
+      end
+      item
+        Value = 20.000000000000000000
+      end
+      item
+        Value = 5.000000000000000000
+      end
+      item
+        Value = 4.000000000000000000
+      end
+      item
+        Value = 1.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = 2
+        ColumnSpan = 6
+        Control = DBGrid1
+        Row = 4
+        RowSpan = 3
+      end
+      item
+        Column = 2
+        ColumnSpan = 2
+        Control = SearchBox1
+        Row = 1
+      end
+      item
+        Column = 6
+        Control = BitBtn1
+        Row = 2
+      end>
+    RowCollection = <
+      item
+        Value = 1.111111111111111000
+      end
+      item
+        Value = 4.444444444444445000
+      end
+      item
+        Value = 5.555555555555555000
+      end
+      item
+        Value = 5.555555555555555000
+      end
+      item
+        Value = 22.222222222222220000
+      end
+      item
+        Value = 22.222222222222220000
+      end
+      item
+        Value = 27.777777777777780000
+      end
+      item
+        Value = 5.555555555555555000
+      end
+      item
+        Value = 4.444444444444445000
+      end
+      item
+        Value = 1.111111111111111000
+      end>
+    TabOrder = 0
+    object DBGrid1: TDBGrid
+      Left = 50
+      Top = 92
+      Width = 900
+      Height = 403
+      Align = alClient
+      BorderStyle = bsNone
+      DataSource = DataSource1
+      Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+      ReadOnly = True
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'Randevu Saati'
+          Width = 142
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'adi'
+          Title.Caption = 'Ad'#305
+          Width = 98
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'soyadi'
+          Title.Caption = 'Soyad'#305
+          Width = 101
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'kimlik_no'
+          Title.Caption = 'Kimlik Numaras'#305
+          Width = 148
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'kullanici_adi'
+          Title.Caption = 'Doktor Ad'#305
+          Width = 197
+          Visible = True
+        end>
+    end
+    object SearchBox1: TSearchBox
+      Left = 50
+      Top = 6
+      Width = 250
+      Height = 24
+      Align = alClient
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      OnChange = SearchBox1Change
+      ExplicitHeight = 27
+    end
+    object BitBtn1: TBitBtn
+      Left = 700
+      Top = 30
+      Width = 200
+      Height = 31
+      Align = alClient
+      Caption = 'Randevu Ekle/Sil'
+      TabOrder = 2
+      OnClick = BitBtn1Click
+    end
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
+      'fo=False;Initial Catalog=disci;Data Source=DESKTOP-PKHVEEA\SQLEX' +
+      'PRESS'
+    LoginPrompt = False
+    Provider = 'SQLOLEDB.1'
+    Left = 8
+    Top = 200
+  end
+  object ADOQuery1: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      
+        'select CONVERT(VARCHAR(5),r.baslangic_zamani, 108)as'#39'Randevu Saa' +
+        'ti'#39',hs.adi,hs.soyadi,hs.kimlik_no,k.kullanici_adi  from randevu ' +
+        'r join hasta_bilgileri hs on hs.id=r.hasta_id join kullanici_hes' +
+        'abi k on k.id=r.doctor_id where CONVERT(VARCHAR(11), GETDATE(), ' +
+        '106)=CONVERT(VARCHAR(11),r.baslangic_zamani, 106)')
+    Left = 8
+    Top = 248
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOQuery1
+    Left = 8
+    Top = 312
+  end
+end

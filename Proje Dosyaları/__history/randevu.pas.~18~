@@ -1,0 +1,49 @@
+unit randevu;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.FileCtrl,
+  Vcl.CheckLst, Vcl.ComCtrls, Vcl.TabNotBk, VCLTee.TeeFilters, System.ImageList,
+  Vcl.ImgList, IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl,
+  IWCompExtCtrls, Vcl.Imaging.pngimage, Vcl.Buttons, Data.DB, Data.Win.ADODB,
+  Vcl.WinXCtrls, Vcl.Grids, Vcl.DBGrids;
+
+type
+  TForm5 = class(TForm)
+    GridPanel1: TGridPanel;
+    DBGrid1: TDBGrid;
+    SearchBox1: TSearchBox;
+    BitBtn1: TBitBtn;
+    ADOConnection1: TADOConnection;
+    ADOQuery1: TADOQuery;
+    DataSource1: TDataSource;
+    procedure SearchBox1Change(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm5.SearchBox1Change(Sender: TObject);
+begin
+if SearchBox1.Text<>'' then
+   Begin
+    ADOQuery1.Filter:='adi LIKE '+QuotedStr(#37+SearchBox1.Text+#37)+' or soyadi LIKE '+QuotedStr(#37+SearchBox1.Text+#37)+' or kimlik_no LIKE '+QuotedStr(#37+SearchBox1.Text+#37)+'or kullanici_adi LIKE '+QuotedStr(#37+SearchBox1.Text+#37)+'';
+    ADOQuery1.Filtered:=true;
+   End
+  else
+   begin
+    ADOQuery1.Filtered:=false;
+   end;
+end;
+
+end.

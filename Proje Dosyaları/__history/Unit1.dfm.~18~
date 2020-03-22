@@ -1,0 +1,83 @@
+﻿object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderStyle = bsToolWindow
+  Caption = 'Giri'#351
+  ClientHeight = 252
+  ClientWidth = 414
+  Color = 10991976
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnKeyPress = FormKeyPress
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 320
+    Top = 56
+    Width = 31
+    Height = 13
+    Caption = 'Label1'
+  end
+  object kullaniciadi: TLabeledEdit
+    Left = 88
+    Top = 88
+    Width = 209
+    Height = 21
+    EditLabel.Width = 55
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Kullan'#305'c'#305' Ad'#305
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Şifre: TLabeledEdit
+    Left = 88
+    Top = 136
+    Width = 209
+    Height = 21
+    EditLabel.Width = 22
+    EditLabel.Height = 13
+    EditLabel.Caption = #350'ifre'
+    PasswordChar = '*'
+    TabOrder = 1
+    OnKeyPress = ŞifreKeyPress
+  end
+  object Button1: TButton
+    Left = 120
+    Top = 179
+    Width = 137
+    Height = 25
+    Caption = 'Giri'#351
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
+      'fo=False;Initial Catalog=disci;Data Source=DESKTOP-PKHVEEA\SQLEX' +
+      'PRESS'
+    LoginPrompt = False
+    Provider = 'SQLOLEDB.1'
+    Left = 168
+    Top = 24
+  end
+  object ADOQuery1: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'select * from kullanici_hesabi ')
+    Left = 216
+    Top = 24
+  end
+end

@@ -1,0 +1,228 @@
+object Form6: TForm6
+  Left = 0
+  Top = 0
+  Caption = 'Form6'
+  ClientHeight = 408
+  ClientWidth = 388
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object GridPanel1: TGridPanel
+    Left = 0
+    Top = 0
+    Width = 388
+    Height = 408
+    Align = alClient
+    BevelOuter = bvNone
+    ColumnCollection = <
+      item
+        Value = 1.000000000000000000
+      end
+      item
+        Value = 4.000000000000000000
+      end
+      item
+        Value = 5.000000000000000000
+      end
+      item
+        Value = 20.000000000000000000
+      end
+      item
+        Value = 20.000000000000000000
+      end
+      item
+        Value = 20.000000000000000000
+      end
+      item
+        Value = 20.000000000000000000
+      end
+      item
+        Value = 5.000000000000000000
+      end
+      item
+        Value = 4.000000000000000000
+      end
+      item
+        Value = 1.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = 1
+        ColumnSpan = 8
+        Control = DBGrid1
+        Row = 4
+        RowSpan = 5
+      end
+      item
+        Column = 2
+        ColumnSpan = 3
+        Control = SearchBox1
+        Row = 1
+      end
+      item
+        Column = 6
+        Control = BitBtn1
+        Row = 2
+      end>
+    RowCollection = <
+      item
+        Value = 1.111111111111111000
+      end
+      item
+        Value = 4.444444444444445000
+      end
+      item
+        Value = 5.555555555555555000
+      end
+      item
+        Value = 5.555555555555555000
+      end
+      item
+        Value = 22.222222222222220000
+      end
+      item
+        Value = 22.222222222222220000
+      end
+      item
+        Value = 27.777777777777780000
+      end
+      item
+        Value = 5.555555555555555000
+      end
+      item
+        Value = 4.444444444444445000
+      end
+      item
+        Value = 1.111111111111111000
+      end>
+    TabOrder = 0
+    object DBGrid1: TDBGrid
+      Left = 3
+      Top = 66
+      Width = 376
+      Height = 333
+      Align = alClient
+      BorderStyle = bsNone
+      DataSource = DataSource1
+      Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+      PopupMenu = eklesil
+      ReadOnly = True
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'adi'
+          Title.Caption = 'Hasta Ad'#305
+          Width = 137
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'soyadi'
+          Title.Caption = 'Hasta Soyad'#305
+          Width = 99
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'kimlik_no'
+          Title.Caption = 'Hasta Kimlik No'
+          Width = 78
+          Visible = True
+        end>
+    end
+    object SearchBox1: TSearchBox
+      Left = 18
+      Top = 4
+      Width = 173
+      Height = 18
+      Align = alClient
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      OnChange = SearchBox1Change
+      ExplicitHeight = 27
+    end
+    object BitBtn1: TBitBtn
+      Left = 268
+      Top = 22
+      Width = 77
+      Height = 22
+      Align = alClient
+      Caption = 'Yeni Ki'#351'i Ekle'
+      TabOrder = 2
+      OnClick = BitBtn1Click
+    end
+  end
+  object ADOQuery1: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      
+        'select hb.adi,hb.soyadi,hb.kimlik_no,hb.id from hasta_bilgileri ' +
+        'hb join akraba ak on ak.id=hb.akraba_id')
+    Left = 8
+    Top = 248
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
+      'fo=False;Initial Catalog=disci;Data Source=DESKTOP-PKHVEEA\SQLEX' +
+      'PRESS'
+    LoginPrompt = False
+    Provider = 'SQLOLEDB.1'
+    Left = 8
+    Top = 200
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOQuery1
+    Left = 8
+    Top = 312
+  end
+  object eklesil: TPopupMenu
+    Left = 8
+    Top = 368
+    object Dzenle1: TMenuItem
+      Caption = 'D'#252'zenle'
+      OnClick = Dzenle1Click
+    end
+    object Sil1: TMenuItem
+      Caption = 'Sil'
+      OnClick = Sil1Click
+    end
+    object Ekle1: TMenuItem
+      Caption = 'Ekle'
+      OnClick = Ekle1Click
+    end
+  end
+  object silQuery: TADOQuery
+    Connection = ADOConnection1
+    Parameters = <>
+    Left = 8
+    Top = 424
+  end
+  object kisibulQuery: TADOQuery
+    Connection = ADOConnection1
+    Parameters = <>
+    Left = 8
+    Top = 472
+  end
+end

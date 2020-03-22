@@ -1,0 +1,30 @@
+unit randevu;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.FileCtrl,
+  Vcl.CheckLst, Vcl.ComCtrls, Vcl.TabNotBk, VCLTee.TeeFilters, System.ImageList,
+  Vcl.ImgList, IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl,
+  IWCompExtCtrls, Vcl.Imaging.pngimage, Vcl.Buttons;
+
+type
+  TForm5 = class(TForm)
+    Image1: TImage;
+    ImageFiltered1: TImageFiltered;
+    BitBtn1: TBitBtn;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+
+implementation
+
+{$R *.dfm}
+
+end.

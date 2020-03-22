@@ -1,0 +1,60 @@
+unit kisiek;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Data.Win.ADODB, Vcl.StdCtrls,
+  Vcl.ExtCtrls, Vcl.Mask;
+
+type
+  TForm7 = class(TForm)
+    GridPanel1: TGridPanel;
+    StaticText1: TStaticText;
+    MaskEdit1: TMaskEdit;
+    StaticText2: TStaticText;
+    MaskEdit2: TMaskEdit;
+    StaticText3: TStaticText;
+    MaskEdit3: TMaskEdit;
+    StaticText4: TStaticText;
+    Memo1: TMemo;
+    StaticText5: TStaticText;
+    MaskEdit4: TMaskEdit;
+    StaticText6: TStaticText;
+    MaskEdit5: TMaskEdit;
+    StaticText7: TStaticText;
+    Panel1: TPanel;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    StaticText9: TStaticText;
+    GridPanel2: TGridPanel;
+    StaticText12: TStaticText;
+    MaskEdit11: TMaskEdit;
+    StaticText13: TStaticText;
+    MaskEdit12: TMaskEdit;
+    StaticText14: TStaticText;
+    MaskEdit13: TMaskEdit;
+    StaticText16: TStaticText;
+    MaskEdit14: TMaskEdit;
+    StaticText17: TStaticText;
+    MaskEdit15: TMaskEdit;
+    StaticText8: TStaticText;
+    Panel2: TPanel;
+    Button1: TButton;
+    Button2: TButton;
+    ADOConnection1: TADOConnection;
+    ADOQuery1: TADOQuery;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form7: TForm7;
+
+implementation
+
+{$R *.dfm}
+
+end.
